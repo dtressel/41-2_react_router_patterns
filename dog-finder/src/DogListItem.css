@@ -1,0 +1,13 @@
+.DogListItem img {
+  height: 300px;
+}
+
+.DogListItem h3 {
+  margin: 10px;
+}
+
+.DogListItem {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
