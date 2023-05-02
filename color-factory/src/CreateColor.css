@@ -1,0 +1,29 @@
+.CreateColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.CreateColor-input-group {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.CreateColor-input-group label {
+  margin: 0.4rem;
+}
+
+.CreateColor-form-wrapper {
+  text-align: left;
+  padding: 5rem;
+  width: 70vw;
+  border-radius: 0.5rem;
+  background-color: beige;
+}
+
+.CreateColor-form-wrapper button {
+  margin-left: 1.4rem;
+}

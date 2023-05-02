@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import ColorFactory from './ColorFactory';
+import CreateColor from './CreateColor';
+import ViewColor from './ViewColor';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/colors" element={<ColorFactory />} />
+        <Route path="/colors/new" element={<CreateColor />} />
+        <Route path="/colors/:color" element={<ViewColor />} />
+        <Route path="*" element={<Navigate replace to="/colors" />} />
+      </Routes>
     </div>
   );
 }

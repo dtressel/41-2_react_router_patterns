@@ -1,0 +1,9 @@
+.Banner {
+  background-color: rgb(26, 26, 26);
+  color: rgb(241, 241, 241);
+  padding: 1rem;
+}
+
+.Banner a {
+  color: rgb(241, 241, 241);
+}
